@@ -16,7 +16,7 @@ public:
         if((dividend == INT_MIN && divisor == 1) || (dividend == INT_MAX && divisor==-1)){
             return INT_MIN;
         }
-        int count = 1;
+        int cnt = 1;
         if(divid-divis<0){
             return 0;
         }
@@ -25,8 +25,8 @@ public:
         while(divid-divis >= 0){
             divid-=divis;
             divis = divis<<1;
-            ans+=count;
-            count = count<<1;
+            ans+=cnt;
+            cnt = cnt<<1;
         }
         divisor = abs(divisor);
         while(divid-divisor>=0){
