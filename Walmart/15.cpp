@@ -4,9 +4,9 @@ class Solution {
 public:
     int divide(int dividend, int divisor) {
         long long ans = 0;
-        bool cneg = false;
+        bool cneg = 0;
         if((dividend<0 && divisor>0) || (dividend>0 && divisor<0)){
-            cneg = true;
+            cneg = 1;
         }
         long long divid = abs(dividend);
         long long divis = abs(divisor);
